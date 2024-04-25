@@ -1,3 +1,8 @@
+*{
+  box-sizing:border-box;
+}
+
+
 body {
   font-family: "Oswald";
   margin: 0px;
@@ -38,6 +43,7 @@ body {
 
 .banner img {
   width: 100%;
+  display:block;
 }
 .banner .banner-desc {
   position: absolute;
@@ -75,6 +81,230 @@ body {
   background-color: white;
 }
 
+.blog-post{
+  display:flex;
+  background-color: rgb(238, 237, 237);
+  padding:30px;
+}
+.left-blog-post{
+  width:70%;
+  padding-right:30px;
+}
+.right-blog-post{
+  width:30%;
+}
+.card{
+  background-color: white;
+  padding:20px;
+  margin-bottom: 30px;
+
+}
+.card img{
+  width:100%;
+}
+.card h3{
+  text-align:center;
+  font-size:2em;
+  text-transform:uppercase;
+  font-weight:400;
+  margin:0px;
+}
+.card p{
+  text-align:center;
+  font-weight:300;
+  margin-bottom:30px;
+}
+.card .date{
+  color:rgb(107, 107, 107);
+  padding:5px;
+  font-size:12px;
+}
+.card .card-desc p{
+  text-align:justify;
+}
+.card .card-buttons{
+  display:flex;
+  
+  padding-bottom:40px;
+
+}
+ .reply-button{
+  margin-left:auto;
+  background-color: black;
+  color:white;
+  padding:10px 15px;
+  border:none;
+
+}
+.reply-button:hover{
+  background-color: silver;
+  cursor:pointer;
+}
+.card-buttons .like-button{
+  background-color: white;
+  color:black;
+  padding:10px 15px;
+  font-size:14px;
+  border:1px solid silver;
+  cursor:pointer;
+}
+.like-button:hover{
+  background-color: rgb(251, 242, 231);
+}
+.one{
+ background-color: white;
+ color:black;
+ padding:5px 8px;
+}
+.jay {
+  color: grey; 
+  font-weight: lighter;
+
+}
+.diagram  {
+  display:flex;
+  align-items:center;
+  padding-top:40px;
+  border-top:1px solid rgb(218, 216, 216);
+}
+.jobs{
+  margin-left:30px;
+}
+.diagram p{
+  text-align:left;
+}
+.diagram img{
+  width:100px;
+}
+.right-blog-post .card{
+  padding:0px;
+
+}
+.grey-filter{
+  background-color: black;
+  color:white;
+  filter:grayscale(10);
+}
+.grey-filter h3 {
+text-align:left;
+font-size:1.5em;
+font-weight:400;
+text-transform: capitalize;
+}
+.grey-filter p{
+  text-align: left;
+  font-size: 15px;
+  font-weight:300;
+  letter-spacing:1.2px;
+}
+.grey-content{
+  padding:15px;
+}
+.card .card-heading {
+  background-color: black;
+  color:white;
+  text-align:left;
+  text-transform:capitalize;
+  padding:10px;
+  font-size:1.5em;
+  }
+  .image-row {
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(217, 212, 212);
+    
+ 
+  }
+  .image-row img{
+    width:60px;
+    padding:18px;
+  }
+  .image-row:hover{
+    background-color: silver;
+    cursor:text;
+  }
+  .card .add{
+    padding:10px;
+  }
+  .add p{
+    background-color: rgb(207, 202, 202);
+    padding:120px;
+    margin:0px;
+  }
+  .substract{
+    padding:15px;
+  }
+
+
+
+  .substract span{
+    background-color: rgb(207, 207, 242);
+    font-size:12px;
+    font-weight:300;
+    padding:5px;
+    display:inline-block;
+    margin:5px;
+  }
+
+  .substract .active{
+    background-color: black;
+    color:white;
+  }
+  .explore{
+    padding:5px;
+    display:block;
+
+  }
+  .explore img{
+    width:100%;
+  }
+  .box{
+    flex:1;
+    padding:5px;
+  }
+  .bare{
+    display:flex;
+  
+  }
+  .apple{
+    padding:12px;
+  }
+  
+  .apple i {
+    width:15px;
+    font-size: 1.5em;
+    padding:5px;
+    padding-top: 7px;
+    padding-bottom:7px;
+  }
+  .apple i:hover{
+    color:silver;
+  }
+  .subscribe-form{
+    padding:12px;
+  }
+  .subscribe-form input{
+    display:block;
+    padding:10px;
+    width:100%;
+    margin-bottom:8px;
+    border:1px solid silver;
+  }
+  .subscribe-form .form-btn{
+    background-color: rgb(245, 96, 96);
+    color:white;
+  }
+  .subscribe-form .form-btn:hover{
+    background-color: silver;
+    color:rgb(254, 8, 8);
+
+  }
+    
+  
+
+
+
+
 @media (max-width: 500px) {
   .banner {
     background-color: black;
@@ -82,5 +312,14 @@ body {
   }
   .banner-desc h2{
     font-size:2.5em;
+  }
+  .blog-post {
+    display:block;
+  }
+  .right-blog-post{
+    width:100%;
+  }
+  .left-blog-post{
+    width:100%;
   }
 }
