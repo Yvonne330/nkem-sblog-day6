@@ -318,8 +318,10 @@ text-transform: capitalize;
   }
   .right-blog-post{
     width:100%;
+    padding:0px;
   }
   .left-blog-post{
     width:100%;
+    padding:0px;
   }
 }
